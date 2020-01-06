@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ame.Satel.Integra.Api", "Ame.Satel.Integra.Api\Ame.Satel.Integra.Api.csproj", "{82652CBD-F507-4259-AD35-662C3B069BA5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ame.Satel.Integra.Tests", "Ame.Satel.Integra.Tests\Ame.Satel.Integra.Tests.csproj", "{6B95B541-DB97-4E1C-BCE0-3ED362DA4A01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82652CBD-F507-4259-AD35-662C3B069BA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82652CBD-F507-4259-AD35-662C3B069BA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82652CBD-F507-4259-AD35-662C3B069BA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82652CBD-F507-4259-AD35-662C3B069BA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B95B541-DB97-4E1C-BCE0-3ED362DA4A01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B95B541-DB97-4E1C-BCE0-3ED362DA4A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B95B541-DB97-4E1C-BCE0-3ED362DA4A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B95B541-DB97-4E1C-BCE0-3ED362DA4A01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A946B562-1370-495B-A823-B4AF86BE4E41}
+	EndGlobalSection
+EndGlobal
