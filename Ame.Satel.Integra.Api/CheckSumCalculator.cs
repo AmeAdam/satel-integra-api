@@ -7,10 +7,16 @@ namespace Ame.Satel.Integra.Api
         private const int initialCrc = 0x147a;
         public static (byte Low, byte High) Calculate(byte[] data)
         {
+            return Calculate(data, 0, data.Length);
+        }
+
+        public static (byte Low, byte High) Calculate(byte[] data, int offset, int size)
+        {
             int crc = initialCrc;
 
-            foreach (var b in data)
+            for (var i = offset; i < offset + size; i++)
             {
+                var b = data[i];
                 crc = RotateLeft(crc);
                 crc = crc ^ 0xFFFF;
                 crc = crc + (crc >> 8) + b;
