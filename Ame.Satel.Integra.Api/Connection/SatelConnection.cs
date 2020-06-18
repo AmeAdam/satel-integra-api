@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ame.Satel.Integra.Api.Connection;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Ame.Satel.Integra.Api
 {
-    public class Connection : IDisposable
+    public class SatelConnection : IDisposable
     {
         private SemaphoreSlim sync = new SemaphoreSlim(1,1);
         private const byte frameSynchronizationMarker = 0xFE;
@@ -20,7 +21,7 @@ namespace Ame.Satel.Integra.Api
         public string Hostname { get; }
         public int Port { get; }
 
-        public Connection(string hostname, int port = 7094)
+        public SatelConnection(string hostname, int port = 7094)
         {
             Hostname = hostname;
             Port = port;
@@ -102,7 +103,7 @@ namespace Ame.Satel.Integra.Api
             }
         }
 
-        private ArraySegment<byte> Read()
+        public ArraySegment<byte> Read()
         {
             SkipBeginMarker();
             var content = ReadContent().ToArray();

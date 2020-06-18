@@ -1,5 +1,6 @@
 using Xunit;
 using Ame.Satel.Integra.Api;
+using Ame.Satel.Integra.Api.Connection;
 
 namespace Ame.Satel.Integra.Tests
 {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ame.Satel.Integra.Api
+namespace Ame.Satel.Integra.Api.Connection
 {
     public class CheckSumCalculator
     {
